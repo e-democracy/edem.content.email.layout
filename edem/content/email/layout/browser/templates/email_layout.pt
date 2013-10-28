@@ -1,0 +1,41 @@
+<tal:block xmlns:tal="http://xml.zope.org/namespaces/tal"
+           xmlns:metal="http://xml.zope.org/namespaces/metal"
+           metal:define-macro="page"><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <metal:block define-slot="title" />
+    <style type="text/css"
+           tal:content="structure provider:groupserver.emailStyle">
+      Filled by the CSS viewlet-manager
+    </style>
+
+    <base href="/" tal:attributes="href view/base" />
+  </head>
+  <body>
+    <div id="gs-content-email-layout-container">
+      <div id="gs-content-email-layout-prebody">
+        <metal:block define-slot="prebody" />
+      </div>
+      <div id="toparea" role="banner">
+        <div id="titlebar">
+          <a id="titlebar-home-link" href="/"><span class="logo"> </span>
+          <span class="site" tal:content="view/siteInfo/name">Site Name</span></a>
+        </div><!--titlebar-->
+      </div><!--toparea-->
+      <div id="gs-content-layout-body">
+        <div id="bodyblock">    
+          <metal:block define-slot="body" />
+        </div><!--bodyblock-->
+      </div><!--gs-content-layout-body-->
+      <div id="gs-content-layout-footer">
+        <div id="gs-content-layout-footer-content"
+             tal:content="structure provider:groupserver.emailFooter">
+          Filled by the footer viewlet-manager
+        </div><!--gs-content-layout-footer-content-->
+      </div><!--gs-content-layout-footer-->
+    </div><!--gs-content-layout-container-->
+  </body>
+</html>
+</tal:block>
+
