@@ -13,10 +13,10 @@
     <base href="/" tal:attributes="href view/base" />
   </head>
   <body>
+    <div id="gs-content-email-layout-prebody">
+      <metal:block define-slot="prebody" />
+    </div>
     <div id="gs-content-email-layout-container">
-      <div id="gs-content-email-layout-prebody">
-        <metal:block define-slot="prebody" />
-      </div>
       <div id="toparea" role="banner">
         <div id="titlebar">
           <a id="titlebar-home-link" href="/"><span class="logo"> </span>
