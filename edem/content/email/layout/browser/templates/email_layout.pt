@@ -9,6 +9,10 @@
            tal:content="structure provider:groupserver.emailStyle">
       Filled by the CSS viewlet-manager
     </style>
+    <style type="text/css" data-premailer="ignore"
+           tal:content="structure provider:groupserver.openEmailStyle">
+        The CSS that is left here.
+    </style>
 
     <base href="/" tal:attributes="href view/base" />
   </head>
