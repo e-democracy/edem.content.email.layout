@@ -24,7 +24,7 @@
       <div id="toparea" role="banner">
         <div id="titlebar">
           <a id="titlebar-home-link" href="/"><span class="logo"> </span>
-          <span class="site" tal:content="view/siteInfo/name">Site Name</span></a>
+          <h1 class="site" tal:content="view/siteInfo/name">Site Name</h1></a>
         </div><!--titlebar-->
       </div><!--toparea-->
       <div id="gs-content-layout-body">
