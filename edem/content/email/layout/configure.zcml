@@ -8,4 +8,13 @@
     layer="edem.skin.interfaces.IEDemLayer"
     template="browser/templates/email_layout.pt"
     permission="zope.Public" /> 
+  <browser:viewlet
+    name="gs-content-email-layout-footer"
+    manager="gs.content.email.layout.interfaces.IHTMLEmailFooter"
+    layer="edem.skin.interfaces.IEDemLayer"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/footer-list.pt"
+    title="Simple footer"
+    weight="10" 
+    permission="zope2.Public"/>
 </configure>
